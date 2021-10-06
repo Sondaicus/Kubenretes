@@ -10,12 +10,12 @@ spec:
   selector:
     matchLabels:
       app: hello
-template:
-  metadata:
-    labels:
-      app: hello
-  spec:
-    containers:
-      - name: hello
-        image: danryderbingo/kubenretes:v1
-        imagePullPolicy: IfNotPresent
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+        - name: hello
+          image: danryderbingo/kubernetes
+          imagePullPolicy: IfNotPresent
